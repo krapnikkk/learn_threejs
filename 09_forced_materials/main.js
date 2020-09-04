@@ -38,7 +38,7 @@ function init() {
     // scene.fog = new THREE.FogExp2(0xffffff, 0.01);
 
     //设置场景中的物体共用材质
-    scene.overrideMaterial =  new THREE.MeshLambertMaterial({coloc:0xffffff});
+    scene.overrideMaterial =  new THREE.MeshLambertMaterial({color:0xffffff});
 
     document.querySelector("#webgl-output").appendChild(renderer.domElement);
     // renderer.render(scene, camera);
