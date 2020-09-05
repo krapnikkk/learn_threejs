@@ -10,10 +10,6 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;//开启阴影效果
 
-    //创建坐标轴对象，轴线设置粗细值20
-    var axes = new THREE.AxesHelper(20);
-    scene.add(axes);
-
     //创建平面对象
     var planeGeometry = new THREE.PlaneGeometry(60, 40, 1, 1);//宽度和高度
     var planeMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });//Lambert网格材质
@@ -23,10 +19,10 @@ function init() {
     plane.receiveShadow = true;
     scene.add(plane);
 
-    camera.position.set(-30, 40, 30);
-    camera.lookAt(scene.position);
+    camera.position.set(-20, 25, 20);
+    camera.lookAt(new THREE.Vector3(5, 0, 0));
 
-    var ambienLight = new THREE.AmbientLight(0x353535);//环境光线
+    var ambienLight = new THREE.AmbientLight(0x494949);//环境光线
     scene.add(ambienLight);
 
 
@@ -80,11 +76,17 @@ function init() {
     geom.faces = faces;
     geom.computeFaceNormals();
 
+    // var wireframe =  new THREE.WireframeGeometry(geom);
+    // var line = new THREE.LineSegments(wireframe);
+    // line.material.lineWidth = 2;
+    // scene.add(line);
+
     var materials = [
         new THREE.MeshBasicMaterial({ color: 0x000000, wireframe: true }),
         new THREE.MeshLambertMaterial({ opacity: 0.6, color: 0x44ff44, transparent: true })
     ]
 
+    //创建多材质对象,为materials数组中每个指定的材质创建一个实例【THREE.Object3D对象】
     var mesh = THREE.SceneUtils.createMultiMaterialObject(geom, materials);
     mesh.castShadow = true;
     mesh.children.forEach((e) => {
@@ -92,7 +94,7 @@ function init() {
     });
     scene.add(mesh);
 
-    var spotLight = new THREE.SpotLight(0xFFFFFF);
+    var spotLight = new THREE.SpotLight(0xffffff, 1, 180, Math.PI / 4);
     spotLight.shadow.mapSize.height = 2048;
     spotLight.shadow.mapSize.width = 2048;
     spotLight.position.set(-40, 40, -15);
@@ -119,7 +121,7 @@ function init() {
 
     var gui = new dat.GUI();
     gui.add({
-        clone : function(){
+        clone: function () {
             var clonedGeometry = mesh.children[0].geometry.clone();
             var materials = [
                 new THREE.MeshLambertMaterial({ opacity: 0.8, color: 0xff44ff, transparent: true }),
@@ -145,13 +147,25 @@ function init() {
         f1.add(controlPoints[i], 'x', -10, 10);
         f1.add(controlPoints[i], 'y', -10, 10);
         f1.add(controlPoints[i], 'z', -10, 10);
-  
+
     }
 
     renderScene();
     function renderScene() {
         trackballControls.update(clock.getDelta());
         stats.update();
+
+        var vertices = [];
+        for (var i = 0; i < 8; i++) {
+            vertices.push(new THREE.Vector3(controlPoints[i].x, controlPoints[i].y, controlPoints[i].z));
+        }
+
+        mesh.children.forEach(function (e) {
+            e.geometry.vertices = vertices;
+            e.geometry.verticesNeedUpdate = true;
+            e.geometry.computeFaceNormals();
+            delete e.geometry.__directGeometry
+        });
 
         requestAnimationFrame(renderScene);
         renderer.render(scene, camera);
