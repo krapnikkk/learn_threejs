@@ -84,12 +84,12 @@ function init() {
         var controls = {
             rotationSpeed: 0.01,
             bouncingSpeed: 0.03,
-            ambientLight: ambientLight.color.getStyle(),
+            ambientColor: ambientLight.color.getStyle(),
             pointColor: pointLight.color.getStyle(),
             intensity: 1,
             distance: pointLight.distance,
         };
-        gui.addColor(controls, 'ambientLight').onChange((e) => {
+        gui.addColor(controls, 'ambientColor').onChange((e) => {
             ambientLight.color = new THREE.Color(e);
         });
         gui.addColor(controls, 'pointColor',).onChange((e) => {
