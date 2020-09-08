@@ -36,5 +36,6 @@
 | [平行光源]](./17_directional_light/index.html)         |  [查看](./17_directional_light/main.js)  |
 | [半球光光源]](./18_hemisphere_light/index.html)         |  [查看](./18_hemisphere_light/main.js)  |
 | [区域光光源]](./19_area_light/index.html)         |  [查看](./19_area_light/main.js)  |
+| [镜头光晕]](./20_lensflares/index.html)         |  [查看](./20_lensflares/main.js)  |
 
 [/placeholder]:p
