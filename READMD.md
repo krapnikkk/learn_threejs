@@ -33,6 +33,7 @@
 | [环境光源]](./14_ambient_light/index.html)         |  [查看](./14_ambient_light/main.js)  |
 | [聚光光源]](./15_spot_light/index.html)         |  [查看](./15_spot_light/main.js)  |
 | [点光源]](./16_point_light/index.html)         |  [查看](./16_point_light/main.js)  |
-| [平行光]](./17_directional_light/index.html)         |  [查看](./17_directional_light/main.js)  |
+| [平行光源]](./17_directional_light/index.html)         |  [查看](./17_directional_light/main.js)  |
+| [半球光光源]](./18_hemisphere_light/index.html)         |  [查看](./18_hemisphere_light/main.js)  |
 
 [/placeholder]:p
