@@ -39,3 +39,11 @@
 | [镜头光晕]](./20_lensflares/index.html)         |  [查看](./20_lensflares/main.js)  |
 
 [/placeholder]:p
+
+## Threejs中的材质
+| 标题 | 详情 |
+| ---- | ---- |
+| [材质的基础属性]](./21_basic_mesh/index.html)         |  [查看](./21_basic_mesh/main.js)  |
+
+
+[/placeholder]:p
