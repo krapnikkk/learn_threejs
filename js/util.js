@@ -248,7 +248,7 @@ function addBasicMaterialSettings(gui, controls, material, name) {
 function loadGopher(material) {
     var loader = new THREE.OBJLoader();
     var mesh = null;
-    var p = new Promise(function(resolve) {
+    var p = new Promise(function (resolve) {
         loader.load('../assets/models/gopher/gopher.obj', function (loadedMesh) {
             // this is a group of meshes, so iterate until we reach a THREE.Mesh
             mesh = loadedMesh;
@@ -273,12 +273,22 @@ function computeNormalsGroup(group) {
         tempGeom.computeVertexNormals();
 
         tempGeom.normalsNeedUpdate = true;
-        
+
         // group = new THREE.BufferGeometry();
         // group.fromGeometry(tempGeom);
         group.geometry = tempGeom;
 
     } else if (group instanceof THREE.Group) {
-        group.children.forEach(function(child) {computeNormalsGroup(child)});
+        group.children.forEach(function (child) { computeNormalsGroup(child) });
+    }
+}
+
+function setMaterialGroup(material, group) {
+    if (group instanceof THREE.Mesh) {
+        group.material = material;
+    } else if (group instanceof THREE.Group) {
+        group.children.forEach(function (child) { 
+            setMaterialGroup(material, child); 
+        });
     }
 }

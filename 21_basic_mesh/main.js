@@ -6,7 +6,7 @@ function init() {
 
     var camera = initCamera();
 
-    camera.position.set(-20, 10, 45);
+    camera.position.set(-20, 50, 40);
     camera.lookAt(new THREE.Vector3(10, 0, 0));
 
     var webGLRenderer = new THREE.WebGLRenderer();
@@ -24,17 +24,17 @@ function init() {
     var scene = new THREE.Scene();
 
     var groundGeom = new THREE.PlaneGeometry(100, 100, 4, 4);
-    var groundMesh = new THREE.Mesh(groundGeom, new THREE.MeshBasicMaterial({ color: 0x77777 }));
+    var groundMesh = new THREE.Mesh(groundGeom, new THREE.MeshBasicMaterial({ color: 0x777777 }));
     groundMesh.rotation.x = -Math.PI / 2
     groundMesh.position.y = -20;
     scene.add(groundMesh);
 
-    var cubeGeometry = new THREE.BoxGeometry(14, 20, 20);
-    var sphereGeometry = new THREE.SphereGeometry(15, 15, 15);
+    var cubeGeometry = new THREE.BoxGeometry(15, 15, 15);
+    var sphereGeometry = new THREE.SphereGeometry(14, 20, 20);
     var planeGeometry = new THREE.PlaneGeometry(14, 14, 4, 4);
 
     var meshMaterial = new THREE.MeshBasicMaterial({
-        color: 0x7777fff,
+        color: 0x7777ff,
         name: "Basic Material",
         flatShading: true
     });
@@ -47,12 +47,13 @@ function init() {
     cube.position = plane.position = sphere.position;
     scene.add(cube);
 
+    
+
     var ambiColor = "#0c0c0c";
     var ambientLight = new THREE.AmbientLight(ambiColor);
     scene.add(ambientLight);
 
-    var pointColor = "#ffffff";
-    var spotLight = new THREE.SpotLight(pointColor);
+    var spotLight = new THREE.SpotLight(0xffffff);
     spotLight.position.set(-40, 60, -10);
     spotLight.castShadow = true;
     scene.add(spotLight);
@@ -68,7 +69,7 @@ function init() {
         trackballControls.update(clock.getDelta());
         stats.update();
 
-        selectedMesh.y += controls.rotationSpeed;
+        selectedMesh.rotation.y += controls.rotationSpeed;
 
         requestAnimationFrame(renderScene);
         renderer.render(scene, camera);
