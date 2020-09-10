@@ -45,6 +45,6 @@
 | ---- | ---- |
 | [材质的基础属性]](./21_basic_mesh/index.html)         |  [查看](./21_basic_mesh/main.js)  |
 | [深度网格材质]](./22_depth_material/index.html)         |  [查看](./22_depth_material/main.js)  |
-
+| [混合材质]](./23_conbined_material/index.html)         |  [查看](./23_conbined_material/main.js)  |
 
 [/placeholder]:p
