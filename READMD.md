@@ -30,22 +30,23 @@
 ## Threejs中的光源
 | 标题 | 详情 |
 | ---- | ---- |
-| [环境光源]](./14_ambient_light/index.html)         |  [查看](./14_ambient_light/main.js)  |
-| [聚光光源]](./15_spot_light/index.html)         |  [查看](./15_spot_light/main.js)  |
-| [点光源]](./16_point_light/index.html)         |  [查看](./16_point_light/main.js)  |
-| [平行光源]](./17_directional_light/index.html)         |  [查看](./17_directional_light/main.js)  |
-| [半球光光源]](./18_hemisphere_light/index.html)         |  [查看](./18_hemisphere_light/main.js)  |
-| [区域光光源]](./19_area_light/index.html)         |  [查看](./19_area_light/main.js)  |
-| [镜头光晕]](./20_lensflares/index.html)         |  [查看](./20_lensflares/main.js)  |
+| [环境光源](./14_ambient_light/index.html)         |  [查看](./14_ambient_light/main.js)  |
+| [聚光光源](./15_spot_light/index.html)         |  [查看](./15_spot_light/main.js)  |
+| [点光源](./16_point_light/index.html)         |  [查看](./16_point_light/main.js)  |
+| [平行光源](./17_directional_light/index.html)         |  [查看](./17_directional_light/main.js)  |
+| [半球光光源](./18_hemisphere_light/index.html)         |  [查看](./18_hemisphere_light/main.js)  |
+| [区域光光源](./19_area_light/index.html)         |  [查看](./19_area_light/main.js)  |
+| [镜头光晕](./20_lensflares/index.html)         |  [查看](./20_lensflares/main.js)  |
 
 [/placeholder]:p
 
 ## Threejs中的材质
 | 标题 | 详情 |
 | ---- | ---- |
-| [网格材质的基础属性]](./21_basic_mesh/index.html)         |  [查看](./21_basic_mesh/main.js)  |
-| [深度网格材质]](./22_depth_material/index.html)         |  [查看](./22_depth_material/main.js)  |
-| [混合网格材质]](./23_conbined_material/index.html)         |  [查看](./23_conbined_material/main.js)  |
-| [法线网格材质]](./24_mesh_normal_material/index.html)         |  [查看](./24_mesh_normal_material/main.js)  |
+| [网格材质的基础属性](./21_basic_mesh/index.html)         |  [查看](./21_basic_mesh/main.js)  |
+| [深度网格材质](./22_depth_material/index.html)         |  [查看](./22_depth_material/main.js)  |
+| [混合网格材质](./23_conbined_material/index.html)         |  [查看](./23_conbined_material/main.js)  |
+| [法线网格材质](./24_mesh_normal_material/index.html)         |  [查看](./24_mesh_normal_material/main.js)  |
+| [单几何体使用多种材质](./25_mesh_face_material/index.html)         |  [查看](./25_mesh_face_material/main.js)  |
 
 [/placeholder]:p
