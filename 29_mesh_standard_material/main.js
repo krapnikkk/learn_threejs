@@ -15,7 +15,7 @@ function init() {
     spotLight.intensity = 0.6;
     scene.add(spotLight);
 
-    var material = new THREE.MeshShandardMaterial({ color: 0x7777ff })
+    var material = new THREE.MeshStandardMaterial({ color: 0x7777ff })
     var controls = {
         color: material.color.getStyle(),
         emissive: material.emissive.getStyle(),//自发光
@@ -25,7 +25,7 @@ function init() {
     var step = 0;
     addBasicMaterialSettings(gui, controls, material);
     addMeshSelection(gui, controls, material, scene);
-    var spGui = gui.addFolder("THREE.MeshShandardMaterial");
+    var spGui = gui.addFolder("THREE.MeshStandardMaterial");
     spGui.addColor(controls, 'color').onChange(function (e) {
         material.color.setStyle(e)
     });
@@ -33,9 +33,9 @@ function init() {
         material.emissive = new THREE.Color(e);
     });
     spGui.add(material, 'metalness', 0, 1, 0.01)//金属感程度
-    spGui.add(material, 'shininess', 0, 1, 0.01)//粗糙程度
+    spGui.add(material, 'roughness', 0, 1, 0.01)//粗糙程度
     spGui.add(material, 'wireframe');
-    spGui.add(material, 'wireframeLinewidth', 0, 20);
+    spGui.add(material, 'wireframeLinewidth', 0.1, 20);
 
     camera.lookAt(controls.selected.position);
     render();

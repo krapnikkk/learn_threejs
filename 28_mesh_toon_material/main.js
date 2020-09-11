@@ -38,7 +38,7 @@ function init() {
     });
     spGui.add(material, 'shininess', 0, 100)//高光度
     spGui.add(material, 'wireframe');
-    spGui.add(material, 'wireframeLinewidth', 0, 20);
+    spGui.add(material, 'wireframeLinewidth', 0.1, 20);
 
     camera.lookAt(controls.selected.position);
     render();

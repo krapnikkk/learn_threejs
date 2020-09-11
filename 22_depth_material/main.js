@@ -53,7 +53,7 @@ function init() {
     addBasicMaterialSettings(gui, controls, scene.overrideMaterial);
     var spGui = gui.addFolder("THREE.MeshDepthMaterial");
     spGui.add(scene.overrideMaterial, 'wireframe');
-    spGui.add(scene.overrideMaterial, 'wireframeLinewidth', 0, 20);
+    spGui.add(scene.overrideMaterial, 'wireframeLinewidth', 0.1, 20);
 
     gui.add(controls, 'rotationSpeed', 0, 0.5);
     gui.add(controls, 'addCube');

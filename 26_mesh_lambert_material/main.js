@@ -110,7 +110,7 @@ function init() {
           meshMaterial.emissive = new THREE.Color(e);
         });
         spGui.add(meshMaterial, 'wireframe');
-        spGui.add(meshMaterial, 'wireframeLinewidth', 0, 20);
+        spGui.add(meshMaterial, 'wireframeLinewidth', 0.1, 20);
 
         loadGopher(meshMaterial).then(function (gopher) {
             gopher.scale.x = 4;

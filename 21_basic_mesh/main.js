@@ -109,7 +109,7 @@ function init() {
             meshMaterial.color.setStyle(e)
         });
         spGui.add(meshMaterial, 'wireframe');
-        spGui.add(meshMaterial, 'wireframeLinewidth', 0, 20);
+        spGui.add(meshMaterial, 'wireframeLinewidth', 0.1, 20);
         spGui.add(meshMaterial, 'wireframeLinejoin', ['round', 'bevel', 'miter']).onChange(function (e) {
             meshMaterial.wireframeLinejoin = e
         });
