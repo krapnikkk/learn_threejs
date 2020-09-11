@@ -36,7 +36,7 @@ function init() {
     spGui.addColor(controls, 'specular').onChange(function (e) {
         material.specular = new THREE.Color(e);
     });
-    spGui.add(material, 'shininess', 0, 100,)//高光度
+    spGui.add(material, 'shininess', 0, 100)//高光度
     spGui.add(material, 'wireframe');
     spGui.add(material, 'wireframeLinewidth', 0, 20);
 
