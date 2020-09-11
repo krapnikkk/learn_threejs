@@ -48,5 +48,6 @@
 | [混合网格材质](./23_conbined_material/index.html)         |  [查看](./23_conbined_material/main.js)  |
 | [法线网格材质](./24_mesh_normal_material/index.html)         |  [查看](./24_mesh_normal_material/main.js)  |
 | [单几何体使用多种材质](./25_mesh_face_material/index.html)         |  [查看](./25_mesh_face_material/main.js)  |
+| [Lambert网格材质](./26_mesh_lambert_material/index.html)         |  [查看](./26_mesh_lambert_material/main.js)  |
 
 [/placeholder]:p
