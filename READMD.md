@@ -51,5 +51,6 @@
 | [Lambert网格材质](./26_mesh_lambert_material/index.html)         |  [查看](./26_mesh_lambert_material/main.js)  |
 | [Phong网格材质](./27_mesh_phong_material/index.html)         |  [查看](./27_mesh_phong_material/main.js)  |
 | [Toon网格材质](./28_mesh_toon_material/index.html)         |  [查看](./28_mesh_toon_material/main.js)  |
+| [标准网格材质](./28_mesh_toon_material/index.html)         |  [查看](./29_mesh_standard_material/main.js)  |
 
 [/placeholder]:p
