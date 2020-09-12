@@ -33,11 +33,11 @@ function init() {
     });
 
     lines.colors = colors;
-    var material = new THREE.LineBasicMaterial({
+    var material = new THREE.LineDashedMaterial({
         vertexColors: true,
         color: 0xffffff,
-        dashSize: 10,//虚线段的长度
-        gapSize: 1,//虚线之间的宽度
+        dashSize: 2,//虚线段的长度
+        gapSize: 2,//虚线之间的宽度
         scale: 0.1//缩放dashSize和gapSize的值
     });
 
