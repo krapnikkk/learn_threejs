@@ -55,5 +55,6 @@
 | [物理网格材质](./30_mesh_physical_material/index.html)         |  [查看](./30_mesh_physical_material/main.js)  |
 | [shader自定义材质](./31_shader_material/index.html)         |  [查看](./31_shader_material/main.js)  |
 | [基础线条材质](./32_line_material/index.html)         |  [查看](./32_line_material/main.js)  |
+| [虚线材质](./33_line_material_dashed/index.html)         |  [查看](./33_line_material_dashed/main.js)  |
 
 [/placeholder]:p
