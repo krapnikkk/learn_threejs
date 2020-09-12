@@ -376,3 +376,42 @@ function addLargeGroundPlane(scene, useTexture) {
 
     return plane;
 }
+
+function createMaterial(vertexShader, fragmentShader) {
+    var vertShader = document.getElementById(vertexShader).innerHTML;
+    var fragShader = document.getElementById(fragmentShader).innerHTML;
+
+    var attributes = {};
+    var uniforms = {
+        time: {
+            type: 'f',
+            value: 0.2
+        },
+        scale: {
+            type: 'f',
+            value: 0.2
+        },
+        alpha: {
+            type: 'f',
+            value: 0.6
+        },
+        resolution: {
+            type: "v2",
+            value: new THREE.Vector2()
+        }
+    };
+
+    uniforms.resolution.value.x = window.innerWidth;
+    uniforms.resolution.value.y = window.innerHeight;
+
+    var meshMaterial = new THREE.ShaderMaterial({
+        uniforms: uniforms,
+        vertexShader: vertShader,
+        fragmentShader: fragShader,
+        transparent: true
+
+    });
+
+
+    return meshMaterial;
+}

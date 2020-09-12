@@ -53,5 +53,6 @@
 | [Toon网格材质](./28_mesh_toon_material/index.html)         |  [查看](./28_mesh_toon_material/main.js)  |
 | [标准网格材质](./28_mesh_toon_material/index.html)         |  [查看](./29_mesh_standard_material/main.js)  |
 | [物理网格材质](./30_mesh_physical_material/index.html)         |  [查看](./30_mesh_physical_material/main.js)  |
+| [shader自定义材质](./31_shader_material/index.html)         |  [查看](./31_shader_material/main.js)  |
 
 [/placeholder]:p
