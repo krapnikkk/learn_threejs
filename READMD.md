@@ -65,5 +65,6 @@
 | [二维几何体](./34_basic_2d_geometries_plane/index.html)         |  [查看](./34_basic_2d_geometries_plane/main.js)  |
 | [二维圆](./35_basic_2d_geometries_circle/index.html)         |  [查看](./35_basic_2d_geometries_circle/main.js)  |
 | [二维圆环](./36_basic_2d_geometries_ring/index.html)         |  [查看](./36_basic_2d_geometries_ring/main.js)  |
+| [二维图形](./37_basic_2d_geometries_shape/index.html)         |  [查看](./37_basic_2d_geometries_shape/main.js)  |
 
 [/placeholder]:p
