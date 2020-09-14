@@ -415,3 +415,103 @@ function createMaterial(vertexShader, fragmentShader) {
 
     return meshMaterial;
 }
+
+function initDefaultLighting(scene, initialPosition) {
+    var position = (initialPosition !== undefined) ? initialPosition : new THREE.Vector3(-10, 30, 40);
+
+    var spotLight = new THREE.SpotLight(0xffffff);
+    spotLight.position.copy(position);
+    spotLight.shadow.mapSize.width = 2048;
+    spotLight.shadow.mapSize.height = 2048;
+    spotLight.shadow.camera.fov = 15;
+    spotLight.castShadow = true;
+    spotLight.decay = 2;
+    spotLight.penumbra = 0.05;
+    spotLight.name = "spotLight"
+
+    scene.add(spotLight);
+
+    var ambientLight = new THREE.AmbientLight(0x343434);
+    ambientLight.name = "ambientLight";
+    scene.add(ambientLight);
+
+}
+
+function applyMeshNormalMaterial(geometry, material) {
+    if (!material || material.type !== "MeshNormalMaterial") {
+        material = new THREE.MeshNormalMaterial();
+        material.side = THREE.DoubleSide;
+    }
+
+    return new THREE.Mesh(geometry, material)
+}
+
+function applyMeshStandardMaterial(geometry, material) {
+    if (!material || material.type !== "MeshStandardMaterial") {
+        var material = new THREE.MeshStandardMaterial({ color: 0xff0000 })
+        material.side = THREE.DoubleSide;
+    }
+
+    return new THREE.Mesh(geometry, material)
+}
+
+function addSpecificMaterialSettings(gui, controls, material, name) {
+    controls.material = material;
+
+    var folderName = (name !== undefined) ? name : 'THREE.' + material.type;
+    var folder = gui.addFolder(folderName);
+    switch (material.type) {
+        case "MeshNormalMaterial":
+            folder.add(controls.material, 'wireframe');
+            return folder;
+
+        case "MeshPhongMaterial":
+            controls.specular = material.specular.getStyle();
+            folder.addColor(controls, 'specular').onChange(function (e) {
+                material.specular.setStyle(e)
+            });
+            folder.add(material, 'shininess', 0, 100, 0.01);
+            return folder;
+
+        case "MeshStandardMaterial":
+            controls.color = material.color.getStyle();
+            folder.addColor(controls, 'color').onChange(function (e) {
+                material.color.setStyle(e)
+            });
+            controls.emissive = material.emissive.getStyle();
+            folder.addColor(controls, 'emissive').onChange(function (e) {
+                material.emissive.setStyle(e)
+            });
+            folder.add(material, 'metalness', 0, 1, 0.01);
+            folder.add(material, 'roughness', 0, 1, 0.01);
+            folder.add(material, 'wireframe');
+
+            return folder;
+    }
+}
+
+function redrawGeometryAndUpdateUI(gui, scene, controls, geomFunction) {
+    guiRemoveFolder(gui, controls.specificMaterialFolder);
+    guiRemoveFolder(gui, controls.currentMaterialFolder);
+    if (controls.mesh) scene.remove(controls.mesh)
+    var changeMat = eval("(" + controls.appliedMaterial + ")")
+    if (controls.mesh) {
+        controls.mesh = changeMat(geomFunction(), controls.mesh.material);
+    } else {
+        controls.mesh = changeMat(geomFunction());
+    }
+
+    controls.mesh.castShadow = controls.castShadow;
+    scene.add(controls.mesh)
+    controls.currentMaterialFolder = addBasicMaterialSettings(gui, controls, controls.mesh.material);
+    controls.specificMaterialFolder = addSpecificMaterialSettings(gui, controls, controls.mesh.material);
+}
+
+function guiRemoveFolder(gui, folder) {
+    if (folder && folder.name && gui.__folders[folder.name]) {
+        gui.__folders[folder.name].close();
+        gui.__folders[folder.name].domElement.parentNode.parentNode.removeChild(gui.__folders[folder.name].domElement.parentNode);
+        delete gui.__folders[folder.name];
+        gui.onResize();
+    }
+}

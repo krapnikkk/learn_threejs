@@ -58,3 +58,11 @@
 | [虚线材质](./33_line_material_dashed/index.html)         |  [查看](./33_line_material_dashed/main.js)  |
 
 [/placeholder]:p
+
+## Threejs中的几何体
+| 标题 | 详情 |
+| ---- | ---- |
+| [二维几何体](./34_basic_2d_geometries_plane/index.html)         |  [查看](./34_basic_2d_geometries_plane/main.js)  |
+
+
+[/placeholder]:p
