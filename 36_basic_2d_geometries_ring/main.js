@@ -35,8 +35,8 @@ function init() {
 
     gui.add(controls, 'innerRadius', 0, 40).onChange(controls.redraw);
     gui.add(controls, 'outerRadius', 0, 40).onChange(controls.redraw);
-    gui.add(controls, 'thetasegments', 0, 40).onChange(controls.redraw);
-    gui.add(controls, 'phiSegments', 0, 40).onChange(controls.redraw);
+    gui.add(controls, 'thetasegments', 0, 40).step(1).onChange(controls.redraw);
+    gui.add(controls, 'phiSegments', 0, 40).step(1).onChange(controls.redraw);
     gui.add(controls, 'thetaStart', 0, 2 * Math.PI).onChange(controls.redraw);
     gui.add(controls, 'thetaLength', 0, 2 * Math.PI).onChange(controls.redraw);
     gui.add(controls, 'appliedMaterial', {
