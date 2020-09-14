@@ -28,7 +28,7 @@ function init() {
 
         this.redraw = () => {
             redrawGeometryAndUpdateUI(gui, scene, controls, () => {
-                return new THREE.RingGeometry();
+                return new THREE.RingGeometry(this.innerRadius,this.outerRadius,this.thetasegments,this.phiSegments,this.thetaStart,this.thetaLength);
             });
         };
     }
