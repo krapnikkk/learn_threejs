@@ -68,4 +68,5 @@
 | [二维图形](./37_basic_2d_geometries_shape/index.html)         |  [查看](./37_basic_2d_geometries_shape/main.js)  |
 | [三维几何体](./38_basic_3d_geometries_cube/index.html)         |  [查看](./38_basic_3d_geometries_cube/main.js)  |
 | [三维球体](./39_basic_3d_geometries_sphere/index.html)         |  [查看](./39_basic_3d_geometries_sphere/main.js)  |
+| [三维圆柱体](./40_basic_3d_geometries_cylinder/index.html)         |  [查看](./40_basic_3d_geometries_cylinder/main.js)  |
 [/placeholder]:p
