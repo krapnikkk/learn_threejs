@@ -72,5 +72,6 @@
 | [三维圆锥体](./41_basic_3d_geometries_cone/index.html)         |  [查看](./41_basic_3d_geometries_cone/main.js)  |
 | [三维圆环体](./42_basic_3d_geometries_torus/index.html)         |  [查看](./42_basic_3d_geometries_torus/main.js)  |
 | [三维缠绕扭结体](./43_basic_3d_geometries_torus_knot/index.html)         |  [查看](./43_basic_3d_geometries_torus_knot/main.js)  |
+| [三维多面体](./44_basic_3d_geometries_polyhedron/index.html)         |  [查看](./44_basic_3d_geometries_polyhedron/main.js)  |
 
 [/placeholder]:p
