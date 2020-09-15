@@ -43,7 +43,8 @@ function init() {
     gui.add(controls, 'phiLength', 0, 2 * Math.PI).onChange(controls.redraw);
     gui.add(controls, 'phiStart', 0, 2 * Math.PI).onChange(controls.redraw);
     gui.add(controls, 'thetaStart', 0, 2 * Math.PI).onChange(controls.redraw);
-    gui.add(controls, 'thetaLength', 0, 2 * Math.PI).onChange(controls.redraw); gui.add(controls, 'appliedMaterial', {
+    gui.add(controls, 'thetaLength', 0, 2 * Math.PI).onChange(controls.redraw); 
+    gui.add(controls, 'appliedMaterial', {
         meshNormal: applyMeshNormalMaterial,
         meshStandard: applyMeshStandardMaterial
     }).onChange(controls.redraw)
@@ -62,30 +63,4 @@ function init() {
         renderer.render(scene, camera);
     }
     render();
-
-    function drawShape() {
-        var shape = new THREE.Shape();
-        shape.moveTo(10, 10);//绘图点移动到指定位置
-        shape.lineTo(10, 40);//从绘图点绘制一条线到指定坐标
-        shape.bezierCurveTo(15, 25, 25, 25, 30, 40);//使用贝塞尔绘制曲线
-        shape.splineThru(//使用提供的坐标集合绘制一条光滑的曲线
-            [new THREE.Vector2(32, 30),
-            new THREE.Vector2(28, 20),
-            new THREE.Vector2(30, 10),
-            ]);
-        shape.quadraticCurveTo(20, 15, 10, 10);
-        var hole1 = new THREE.Path();
-        hole1.absellipse(16, 24, 2, 3, 0, Math.PI * 2, true);
-        shape.holes.push(hole1);
-
-        var hole2 = new THREE.Path();
-        hole2.absellipse(23, 24, 2, 3, 0, Math.PI * 2, true);
-        shape.holes.push(hole2);
-
-        var hole3 = new THREE.Path();
-        hole3.absarc(20, 16, 2, 0, Math.PI, true);//使用绝对位置绘制圆弧
-        shape.holes.push(hole3);
-
-        return shape;
-    }
 }
