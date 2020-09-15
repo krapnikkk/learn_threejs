@@ -6,8 +6,6 @@ function init() {
 
     var scene = new THREE.Scene();
 
-    var stats = initStats();
-
     // add subtle ambient lighting
     var ambientLight = new THREE.AmbientLight(0x0c0c0c);
     scene.add(ambientLight);

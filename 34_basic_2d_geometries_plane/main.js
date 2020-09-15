@@ -6,8 +6,6 @@ function init() {
 
     var scene = new THREE.Scene();
 
-    var stats = initStats();
-
     var groundPlane = addLargeGroundPlane(scene);
     groundPlane.position.y = -10;
     initDefaultLighting(scene);
