@@ -16,10 +16,6 @@ function init() {
         this.castShadow = true;
         this.groundPlaneVisible = true;
 
-        this.radius = 10;//多面体的大小
-        this.details = 0;//多面体的细节程度
-        this.type = 'Icosahedron';
-
         this.redraw = () => {
             redrawGeometryAndUpdateUI(gui, scene, controls, () => {
                 return generatePoints();
