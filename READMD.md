@@ -75,3 +75,10 @@
 | [三维多面体](./44_basic_3d_geometries_polyhedron/index.html)         |  [查看](./44_basic_3d_geometries_polyhedron/main.js)  |
 
 [/placeholder]:p
+
+## Threejs中的高级几何体和二元操作
+| 标题 | 详情 |
+| ---- | ---- |
+| [凸包几何体](./45_advanced_geometries_convexGeometries/index.html)         |  [查看](./45_advanced_geometries_convexGeometries/main.js)  |
+
+[/placeholder]:p
