@@ -80,5 +80,6 @@
 | 标题 | 详情 |
 | ---- | ---- |
 | [凸包几何体](./45_advanced_geometries_convexGeometries/index.html)         |  [查看](./45_advanced_geometries_convexGeometries/main.js)  |
+| [车削几何体](./46_advanced_geometries_latheGeometries/index.html)         |  [查看](./46_advanced_geometries_latheGeometries/main.js)  |
 
 [/placeholder]:p
