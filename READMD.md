@@ -83,6 +83,7 @@
 | [车削几何体](./46_advanced_geometries_latheGeometries/index.html)         |  [查看](./46_advanced_geometries_latheGeometries/main.js)  |
 | [挤压几何体](./47_advanced_geometries_extrudeGeometries/index.html)         |  [查看](./47_advanced_geometries_extrudeGeometries/main.js)  |
 | [管几何体](./48_advanced_geometries_tubeGeometries/index.html)         |  [查看](./48_advanced_geometries_tubeGeometries/main.js)  |
-| [通过svg创建几何体](./49_advanced_geometries_extrude_svg/index.html)         |  [查看](./49_advanced_geometries_extrude_svg/main.js)  |
+| [通过svg创建几何体](./49_advanced_geometries_extrude_svg/index.html)|  [查看](./49_advanced_geometries_extrude_svg/main.js)  |
+| [参数化几何体](./50_advanced_geometries_parametric/index.html)|  [查看](./50_advanced_geometries_parametric/main.js)  |
 
 [/placeholder]:p
