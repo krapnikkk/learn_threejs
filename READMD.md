@@ -89,3 +89,10 @@
 | [几何体的二元操作BSP](./52_binary_operations/index.html)|  [查看](./52_binary_operations/main.js)  |
 
 [/placeholder]:p
+
+## Threejs中的高级几何体和二元操作
+| 标题 | 详情 |
+| ---- | ---- |
+| [精灵（Sprite）](./52_binary_operations/index.html) |  [查看](./52_binary_operations/main.js)  |
+
+[/placeholder]:p
