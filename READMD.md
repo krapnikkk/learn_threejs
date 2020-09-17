@@ -86,5 +86,6 @@
 | [通过svg创建几何体](./49_advanced_geometries_extrude_svg/index.html)|  [查看](./49_advanced_geometries_extrude_svg/main.js)  |
 | [参数化几何体](./50_advanced_geometries_parametric/index.html)|  [查看](./50_advanced_geometries_parametric/main.js)  |
 | [文本几何体](./51_advanced_geometries_text/index.html)|  [查看](./51_advanced_geometries_text/main.js)  |
+| [几何体的二元操作BSP](./52_binary_operations/index.html)|  [查看](./52_binary_operations/main.js)  |
 
 [/placeholder]:p
