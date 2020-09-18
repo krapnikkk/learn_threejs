@@ -13,13 +13,13 @@ function init() {
     camera.lookAt(new THREE.Vector3(0, 0, 0));
 
     var controls = {
-        size: 4,
-        transparent: true,
-        opacity: 0.6,
+        size: 4,//粒子尺寸
+        transparent: true,//是否受透明影响
+        opacity: 0.6,//透明度
         vertexColors: true,
-        color: 0xffffff,
-        vertexColor: 0x00ff00,
-        sizeAttenuation: true,
+        color: 0xffffff,//粒子系统中所有粒子的颜色
+        vertexColor: 0x00ff00,//
+        sizeAttenuation: true,//是否受透视摄像机影响
         rotate: true,
 
         redraw: () => {
