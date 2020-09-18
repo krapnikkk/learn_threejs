@@ -515,3 +515,13 @@ function guiRemoveFolder(gui, folder) {
         gui.onResize();
     }
 }
+
+function initCanvasRenderer() {
+
+    var canvasRenderer = new THREE.CanvasRenderer();
+    canvasRenderer.setClearColor(new THREE.Color(0x000000));
+    canvasRenderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById("webgl-output").appendChild(canvasRenderer.domElement);
+
+    return canvasRenderer;
+}
