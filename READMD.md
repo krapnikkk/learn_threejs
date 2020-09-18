@@ -95,5 +95,7 @@
 | ---- | ---- |
 | [精灵（Sprite）](./53_sprites/index.html) |  [查看](./53_sprites/main.js)  |
 | [点（Points）](./54_points/index.html) |  [查看](./54_points/main.js)  |
+| [PointsMaterial样式化粒子](./55_basic_point_cloud/index.html) |  [查看](./55_basic_point_cloud/main.js)  |
+
 
 [/placeholder]:p
