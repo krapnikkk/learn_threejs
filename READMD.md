@@ -93,6 +93,7 @@
 ## Threejs中的高级几何体和二元操作
 | 标题 | 详情 |
 | ---- | ---- |
-| [精灵（Sprite）](./52_binary_operations/index.html) |  [查看](./52_binary_operations/main.js)  |
+| [精灵（Sprite）](./53_sprites/index.html) |  [查看](./53_sprites/main.js)  |
+| [点（Points）](./54_points/index.html) |  [查看](./54_points/main.js)  |
 
 [/placeholder]:p
