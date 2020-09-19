@@ -99,5 +99,6 @@
 | [使用canvas样式化粒子](./56_program_based_sprites/index.html) |  [查看](./56_program_based_sprites/main.js)  |
 | [在webGLRenderer中使用canvas样式化粒子](./57_program_based_points_webgl/index.html) |  [查看](./57_program_based_points_webgl/main.js)  |
 | [使用纹理样式化粒子](./58_rainy_scene/index.html) |  [查看](./58_rainy_scene/main.js)  |
+| [多纹理样式化粒子](./59_snowy_scene/index.html) |  [查看](./59_snowy_scene/main.js)  |
 
 [/placeholder]:p
