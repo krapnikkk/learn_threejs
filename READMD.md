@@ -101,5 +101,6 @@
 | [使用纹理样式化粒子](./58_rainy_scene/index.html) |  [查看](./58_rainy_scene/main.js)  |
 | [多纹理样式化粒子](./59_snowy_scene/index.html) |  [查看](./59_snowy_scene/main.js)  |
 | [使用精灵贴图创建精灵](./60_sprites/index.html) |  [查看](./60_sprites/main.js)  |
+| [3D空间中的精灵](./61_sprites_3D/index.html) |  [查看](./61_sprites_3D/main.js)  |
 
 [/placeholder]:p
