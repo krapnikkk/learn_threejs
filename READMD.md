@@ -100,5 +100,6 @@
 | [在webGLRenderer中使用canvas样式化粒子](./57_program_based_points_webgl/index.html) |  [查看](./57_program_based_points_webgl/main.js)  |
 | [使用纹理样式化粒子](./58_rainy_scene/index.html) |  [查看](./58_rainy_scene/main.js)  |
 | [多纹理样式化粒子](./59_snowy_scene/index.html) |  [查看](./59_snowy_scene/main.js)  |
+| [使用精灵贴图创建精灵](./60_sprites/index.html) |  [查看](./60_sprites/main.js)  |
 
 [/placeholder]:p

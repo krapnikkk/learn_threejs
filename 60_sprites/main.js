@@ -1,12 +1,14 @@
 function init() {
 
     var stats = initStats();
-    var camera = initCamera(new THREE.Vector3(0, 0, 50));
-    var cameraOrtho = new THREE.OrthographicCamera(0, window.innerWidth, window.innerHeight, 0, -10, -10);
-
     var renderer = initRenderer();
     var scene = new THREE.Scene();
     var sceneOrtho = new THREE.Scene();
+    var camera = initCamera(new THREE.Vector3(0, 0, 50));
+    var cameraOrtho = new THREE.OrthographicCamera(0, window.innerWidth, window.innerHeight, 0, -10, 10);
+
+    
+
 
     var material = new THREE.MeshNormalMaterial();
     var geom = new THREE.SphereGeometry(15, 20, 20);
@@ -23,7 +25,7 @@ function init() {
         transparent: true,
         opacity: 0.6,
         color: 0xffffff,
-        rotate: true,
+        sprite: 0,
         redraw: () => {
             sceneOrtho.children.forEach((child) => {
                 if (child instanceof THREE.Sprite) {
@@ -36,11 +38,11 @@ function init() {
         }
     }
     var gui = new dat.GUI();
+    gui.add(controls, 'sprite', 0, 4).step(1).onChange(controls.redraw);
     gui.add(controls, 'size', 0, 20).onChange(controls.redraw);
     gui.add(controls, 'transparent').onChange(controls.redraw);
     gui.add(controls, 'opacity', 0, 1).onChange(controls.redraw);
     gui.addColor(controls, 'color').onChange(controls.redraw);
-    gui.add(controls, 'rotate').onChange();
 
     controls.redraw();
     render();
@@ -52,26 +54,27 @@ function init() {
         camera.position.y = Math.sin(step += 0.01) * 20;
 
         sceneOrtho.children.forEach(function (e) {
-          if (e instanceof THREE.Sprite) {
-            e.position.x = e.position.x + e.velocityX;
-            if (e.position.x > window.innerWidth) {
-              e.velocityX = -5;
-              controls.sprite += 1;
-              e.material.map.offset.set(1 / 5 * (controls.sprite % 4), 0);
+            if (e instanceof THREE.Sprite) {
+                e.position.x = e.position.x + e.velocityX;
+                if (e.position.x > window.innerWidth) {
+                    e.velocityX = -5;
+                    controls.sprite += 1;
+                    e.material.map.offset.set(1 / 5 * (controls.sprite % 4), 0);
+                }
+                if (e.position.x < 0) {
+                    e.velocityX = 5;
+                }
             }
-            if (e.position.x < 0) {
-              e.velocityX = 5;
-            }
-          }
         });
 
         requestAnimationFrame(render);
-        renderer.render(sceneOrtho, cameraOrtho);
-        renderer.autoClear = false;
+        
         renderer.render(scene, camera);
+        renderer.autoClear = false;
+        renderer.render(sceneOrtho, cameraOrtho);
     }
 
-    function createSprite(size, transparent, opacity, color, spirte) {
+    function createSprite(size, transparent, opacity, color, spriteId) {
         var spriteMaterial = new THREE.SpriteMaterial({
             opacity: opacity,
             color: color,
@@ -79,10 +82,10 @@ function init() {
             map: getTexture()
         });
 
-        spriteMaterial.map.offset = new THREE.Vector3(0.2 * sprite, 0);
+        spriteMaterial.map.offset = new THREE.Vector2(0.2 * spriteId, 0);
         spriteMaterial.map.repeat = new THREE.Vector2(1 / 5, 1);
-        spriteMaterial.map.blending = THREE.AdditiveBlending;
-        spriteMaterial.map.dethTest = false;
+        spriteMaterial.blending = THREE.AdditiveBlending;
+        spriteMaterial.depthTest = false;
 
         var sprite = new THREE.Sprite(spriteMaterial);
         sprite.scale.set(size, size, size);
