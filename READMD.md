@@ -102,5 +102,7 @@
 | [多纹理样式化粒子](./59_snowy_scene/index.html) |  [查看](./59_snowy_scene/main.js)  |
 | [使用精灵贴图创建精灵](./60_sprites/index.html) |  [查看](./60_sprites/main.js)  |
 | [3D空间中的精灵](./61_sprites_3D/index.html) |  [查看](./61_sprites_3D/main.js)  |
+| [从几何体创建精灵](./62_create_particle_system_from_model) |  [查看](./62_create_particle_system_from_model/main.js)  |
+
 
 [/placeholder]:p
