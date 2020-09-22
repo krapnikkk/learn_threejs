@@ -110,5 +110,6 @@
 | 标题                                      | 详情                         |
 | ----------------------------------------- | ---------------------------- |
 | [对象组合](./63_grouping/index.html) | [查看](./63_grouping/main.js) |
+| [对象合并](./64_merging/index.html) | [查看](./64_merging/main.js) |
 
 [/placeholder]:p
