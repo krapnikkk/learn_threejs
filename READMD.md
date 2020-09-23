@@ -112,5 +112,6 @@
 | [对象组合](./63_grouping/index.html) | [查看](./63_grouping/main.js) |
 | [对象合并](./64_merging/index.html) | [查看](./64_merging/main.js) |
 | [存储和加载THREE.Mesh](./65_load_save_json_object/index.html) | [查看](./65_load_save_json_object/main.js) |
+| [存储和加载场景](./66_load_save_json_scene/index.html) | [查看](./66_load_save_json_scene/main.js) |
 
 [/placeholder]:p
