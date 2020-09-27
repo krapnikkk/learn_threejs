@@ -121,7 +121,8 @@
 | [加载CTM模型](./72_load_ctm/index.html) | [查看](./72_load_ctm/main.js) |
 | [加载VTK模型](./73_load_vtk/index.html) | [查看](./73_load_vtk/main.js) |
 | [加载AWD模型](./74_load_awd/index.html) | [查看](./74_load_awd/main.js) |
-| [加载AWD模型](./75_load_assimp/index.html) | [查看](./75_load_assimp/main.js) |
+| [加载assimp模型](./75_load_assimp/index.html) | [查看](./75_load_assimp/main.js) |
+| [加载vrml模型](./76_load_vrml/index.html) | [查看](./76_load_vrml/main.js) |
 
 
 [/placeholder]:p
