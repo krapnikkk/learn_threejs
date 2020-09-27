@@ -123,6 +123,7 @@
 | [加载AWD模型](./74_load_awd/index.html) | [查看](./74_load_awd/main.js) |
 | [加载assimp模型](./75_load_assimp/index.html) | [查看](./75_load_assimp/main.js) |
 | [加载vrml模型](./76_load_vrml/index.html) | [查看](./76_load_vrml/main.js) |
+| [加载Babylon模型](./77_load_babylon/index.html) | [查看](./77_load_babylon/main.js) |
 
 
 [/placeholder]:p
