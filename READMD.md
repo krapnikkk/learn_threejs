@@ -114,5 +114,6 @@
 | [存储和加载THREE.Mesh](./65_load_save_json_object/index.html) | [查看](./65_load_save_json_object/main.js) |
 | [存储和加载场景](./66_load_save_json_scene/index.html) | [查看](./66_load_save_json_scene/main.js) |
 | [加载Blender文件场景](./67_blender_from_json/index.html) | [查看](./67_blender_from_json/main.js) |
+| [加载OBJ文件](./68_load_obj/index.html) | [查看](./68_load_obj/main.js) |
 
 [/placeholder]:p
