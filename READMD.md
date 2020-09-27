@@ -118,5 +118,7 @@
 | [加载OBJ和MTL文件](./69_load_obj_mtl/index.html) | [查看](./69_load_obj_mtl/main.js) |
 | [加载Collada模型](./70_load_collada/index.html) | [查看](./70_load_collada/main.js) |
 | [加载STL模型](./71_load_stl/index.html) | [查看](./71_load_stl/main.js) |
+| [加载CTM模型](./72_load_ctm/index.html) | [查看](./72_load_ctm/main.js) |
+
 
 [/placeholder]:p
