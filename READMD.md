@@ -128,5 +128,6 @@
 | [加载3MF模型](./79_load_3MF/index.html) | [查看](./79_load_3MF/main.js) |
 | [加载AMF模型](./80_load_amf/index.html) | [查看](./80_load_amf/main.js) |
 | [加载play_canvas模型](./81_load_play_canvas/index.html) | [查看](./81_load_play_canvas/main.js) |
+| [加载draco模型](./82_load_draco/index.html) | [查看](./82_load_draco/main.js) |
 
 [/placeholder]:p
