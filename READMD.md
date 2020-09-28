@@ -125,6 +125,6 @@
 | [加载vrml模型](./76_load_vrml/index.html) | [查看](./76_load_vrml/main.js) |
 | [加载Babylon模型](./77_load_babylon/index.html) | [查看](./77_load_babylon/main.js) |
 | [加载tds模型](./78_load_tds/index.html) | [查看](./78_load_tds/main.js) |
-
+| [加载3MF模型](./79_load_3MF/index.html) | [查看](./79_load_3MF/main.js) |
 
 [/placeholder]:p
