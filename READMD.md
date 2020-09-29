@@ -133,5 +133,6 @@
 | [加载gcode模型](./84_load_gcode/index.html) | [查看](./84_load_gcode/main.js) |
 | [加载nrrd模型](./85_load_nrrd/index.html) | [查看](./85_load_nrrd/main.js) |
 | [加载svg模型](./86_load_svg/index.html) | [查看](./86_load_svg/main.js) |
+| [加载pdb模型](./87_load_pdb/index.html) | [查看](./87_load_pdb/main.js) |
 
 [/placeholder]:p
