@@ -137,3 +137,10 @@
 | [加载ply模型](./88_load_ply/index.html) | [查看](./88_load_ply/main.js) |
 
 [/placeholder]:p
+
+## Threejs中的动画和摄像头
+| 标题                                           | 详情                                   |
+| ---------------------------------------------- | -------------------------------------- |
+| [基础动画](./89_basic_animation/index.html)      | [查看](./89_basic_animation/main.js)     |
+
+[/placeholder]:p
