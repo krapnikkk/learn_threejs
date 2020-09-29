@@ -132,5 +132,6 @@
 | [加载prvm模型](./83_load_prvm/index.html) | [查看](./83_load_prvm/main.js) |
 | [加载gcode模型](./84_load_gcode/index.html) | [查看](./84_load_gcode/main.js) |
 | [加载nrrd模型](./85_load_nrrd/index.html) | [查看](./85_load_nrrd/main.js) |
+| [加载svg模型](./86_load_svg/index.html) | [查看](./86_load_svg/main.js) |
 
 [/placeholder]:p
