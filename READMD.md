@@ -134,5 +134,6 @@
 | [加载nrrd模型](./85_load_nrrd/index.html) | [查看](./85_load_nrrd/main.js) |
 | [加载svg模型](./86_load_svg/index.html) | [查看](./86_load_svg/main.js) |
 | [加载pdb模型](./87_load_pdb/index.html) | [查看](./87_load_pdb/main.js) |
+| [加载ply模型](./88_load_ply/index.html) | [查看](./88_load_ply/main.js) |
 
 [/placeholder]:p
