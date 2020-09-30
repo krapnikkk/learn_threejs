@@ -142,5 +142,6 @@
 | 标题                                           | 详情                                   |
 | ---------------------------------------------- | -------------------------------------- |
 | [基础动画](./89_basic_animation/index.html)      | [查看](./89_basic_animation/main.js)     |
+| [碰撞检测](./90_selecting_objects/index.html)      | [查看](./90_selecting_objects/main.js)     |
 
 [/placeholder]:p
