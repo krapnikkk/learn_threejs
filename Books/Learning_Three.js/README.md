@@ -145,5 +145,10 @@
 | [碰撞检测](./90_selecting_objects/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/90_selecting_objects/)    |
 | [缓动动画](./91_anmation_tween/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/91_anmation_tween/)    |
 | [轨迹球相机控制器](./92_trackball_controls_camera/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/92_trackball_controls_camera/)    |
+| [飞行相机控制器](./93_fly_controls_camera/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/93_fly_controls_camera/)    |
+| [第一人称相机控制器](./94_first_person_camera/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/94_first_person_camera/)    |
+| [轨道相机控制器](./95_orbit_controls/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/95_orbit_controls/)    |
+| [变形目标](./96_morph_targets/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/96_morph_targets/)    |
+
 
 [/placeholder]:p
