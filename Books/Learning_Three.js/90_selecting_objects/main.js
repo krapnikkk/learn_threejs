@@ -8,7 +8,7 @@ function init() {
   document.addEventListener('mousemove', onDocumentMouseMove, false);
 
   // var trackballControls = initTrackballControls(camera, renderer);
-  var clock = new THREE.Clock();
+  // var clock = new THREE.Clock();
 
   initDefaultLighting(scene);
 
@@ -120,10 +120,10 @@ function init() {
         if (tube)
           scene.remove(tube);
 
-        if (controls.showRay) {
-          tube = new THREE.Mesh(tubeGeometry, mat);
-          scene.add(tube);
-        }
+
+        tube = new THREE.Mesh(tubeGeometry, mat);
+        scene.add(tube);
+
       }
     }
   }

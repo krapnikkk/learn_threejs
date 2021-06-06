@@ -143,5 +143,7 @@
 | ---------------------------------------------- | -------------------------------------- |
 | [基础动画](./89_basic_animation/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/89_basic_animation/)    |
 | [碰撞检测](./90_selecting_objects/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/90_selecting_objects/)    |
+| [缓动动画](./91_anmation_tween/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/91_anmation_tween/)    |
+| [轨迹球相机控制器](./92_trackball_controls_camera/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/92_trackball_controls_camera/)    |
 
 [/placeholder]:p
