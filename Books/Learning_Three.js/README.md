@@ -150,5 +150,7 @@
 | [轨道相机控制器](./95_orbit_controls/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/95_orbit_controls/)    |
 | [变形目标](./96_morph_targets/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/96_morph_targets/)    |
 | [多个变形目标](./97_manual_morph_targets/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/97_manual_morph_targets/)    |
+| [骨骼动画](./98_bones_manually/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/98_bones_manually/)    |
+
 
 [/placeholder]:p
