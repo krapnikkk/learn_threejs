@@ -156,6 +156,6 @@
 | [MD2动画](./101_animation_from_md2/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/101_animation_from_md2/)    |
 | [GLTF动画](./102_animation_from_gltf/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/102_animation_from_gltf/)    |
 | [FBX动画](./103_animation_from_fbx/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/103_animation_from_fbx/)    |
-
+| [DirectX动画](./104_animation_from_directX/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/104_animation_from_directX/)    |
 
 [/placeholder]:p
