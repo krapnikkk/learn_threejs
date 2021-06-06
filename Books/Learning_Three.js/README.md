@@ -153,5 +153,7 @@
 | [骨骼动画](./98_bones_manually/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/98_bones_manually/)    |
 | [blender骨骼动画](./99_animation_from_blender/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/99_animation_from_blender/)    |
 | [collada动画](./100_animation_from_collada/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/100_animation_from_collada/)    |
+| [MD2动画](./101_animation_from_md2/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/101_animation_from_md2/)    |
+
 
 [/placeholder]:p
