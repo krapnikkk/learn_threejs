@@ -158,5 +158,6 @@
 | [FBX动画](./103_animation_from_fbx/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/103_animation_from_fbx/)    |
 | [DirectX动画](./104_animation_from_directX/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/104_animation_from_directX/)    |
 | [BVH动画](./105_animation_from_bvh/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/105_animation_from_bvh/)    |
+| [sea3d动画](./106_animation_from_sea3d/main.js)      | [查看](https://krapnikkk.github.io/learn_threejs/Books/Learning_Three.js/106_animation_from_sea3d/)    |
 
 [/placeholder]:p
