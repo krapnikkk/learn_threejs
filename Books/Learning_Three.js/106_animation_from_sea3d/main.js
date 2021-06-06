@@ -4,45 +4,54 @@ function init() {
   var camera = initCamera();
   var scene = new THREE.Scene();
   scene.add(new THREE.AmbientLight(0x333333));
-
+  
+  camera.position.set(0, 10, 70);
   var trackballControls = initTrackballControls(camera, renderer);
-  camera.position.set(0, 0, -300);
   var clock = new THREE.Clock();
 
   var mixer = new THREE.AnimationMixer();
+  var sceneContainer = new THREE.Scene();
   var clipAction
+  var animationClip
+  var mesh
   var controls
   var mixerControls = {
     time: 0,
     timeScale: 1,
-    stopAllAction: function () { mixer.stopAllAction() },
+    stopAllAction: function() {mixer.stopAllAction()},
   }
-
+  
   initDefaultLighting(scene);
-  var loader = new THREE.BVHLoader();
-  loader.load('../assets/models/amelia-dance/DanceNightClub7_t1.bvh', function (result, mat) {
 
-    skeletonHelper = new THREE.SkeletonHelper(result.skeleton.bones[0]);
-    skeletonHelper.skeleton = result.skeleton; // allow animation mixer to bind to SkeletonHelper directly
-    var boneContainer = new THREE.Object3D();
-    boneContainer.translateY(-70);
-    boneContainer.translateX(-100);
-    boneContainer.add(result.skeleton.bones[0]);
-    scene.add(skeletonHelper);
-    scene.add(boneContainer);
+  var loader = new THREE.SEA3D({
+    container: sceneContainer
+  });
+  loader.load('../assets/models/mascot/mascot.sea');
+  loader.onComplete = function( e ) {
+    var skinnedMesh = sceneContainer.children[0];
+    skinnedMesh.scale.set(0.1, 0.1, 0.1);
+    skinnedMesh.translateX(-40);
+    skinnedMesh.translateY(-20);
+    skinnedMesh.rotateY(-0.2*Math.PI);
+    scene.add(skinnedMesh);
 
-    console.log(result.clip)
-    mixer = new THREE.AnimationMixer(skeletonHelper);
-    clipAction = mixer.clipAction(result.clip).setEffectiveWeight(1.0).play();
-
+    // and set up the animation
+    mixer = new THREE.AnimationMixer( skinnedMesh );
+    animationClip = skinnedMesh.animations[0].clip;
+    clipAction = mixer.clipAction( animationClip ).play();    
+    animationClip = clipAction.getClip();
+    enableControls();
+  };
+    
+  function enableControls() {
     var gui = new dat.GUI();
     var mixerFolder = gui.addFolder("AnimationMixer")
     mixerFolder.add(mixerControls, "time").listen()
-    mixerFolder.add(mixerControls, "timeScale", 0, 5).onChange(function (timeScale) { mixer.timeScale = timeScale });
+    mixerFolder.add(mixerControls, "timeScale", 0, 5).onChange(function (timeScale) {mixer.timeScale = timeScale});
     mixerFolder.add(mixerControls, "stopAllAction").listen()
-
-    controls = addClipActionFolder("ClipAction", gui, clipAction, result.clip);
-  })
+    
+    controls = addClipActionFolder("ClipAction 1", gui, clipAction, animationClip);
+  }
 
   render();
   function render() {
@@ -52,11 +61,11 @@ function init() {
     requestAnimationFrame(render);
     renderer.render(scene, camera)
 
-    if (mixer && clipAction) {
-      mixer.update(delta);
+    if (mixer && clipAction && controls) {
+      mixer.update( delta );
       controls.time = mixer.time;
       controls.effectiveTimeScale = clipAction.getEffectiveTimeScale();
       controls.effectiveWeight = clipAction.getEffectiveWeight();
     }
-  }
+  }   
 }
